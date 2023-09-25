@@ -10,5 +10,5 @@ add-apt-repository \
 apt-get update
 apt-get install -y docker-ce
 usermod -aG docker ubuntu
-sudo docker pull marcrine/bookappbackend
-sudo docker run -d -p 5000:5000 marcrine/bookappbackend
+sudo docker pull docker pull thenamuthan/simple-devops-image
+sudo docker run -d -p 5000:5000 docker pull thenamuthan/simple-devops-image
