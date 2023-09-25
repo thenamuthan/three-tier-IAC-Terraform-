@@ -11,4 +11,4 @@ apt-get update
 apt-get install -y docker-ce
 usermod -aG docker ubuntu
 sudo docker pull thenamuthan/website:latest
-docker run -d -p 8090:80 mywebsite:latest	
+sudo docker run -d -p 8090:80 mywebsite:latest	
