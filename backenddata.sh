@@ -11,4 +11,4 @@ apt-get update
 apt-get install -y docker-ce
 usermod -aG docker ubuntu
 sudo docker pull thenamuthan/website:latest
-sudo docker run -itd -p 8080:80 --name websites website
+sudo docker run -itd -p 8080:80 5170fa011675
