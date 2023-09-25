@@ -6,7 +6,7 @@ resource aws_vpc "cloudforce_vpc"{
   cidr_block = "10.0.0.0/16"
 
   tags = {
-    "Name" = "cloudforce_vpc"
+    "Name" = "Priya_vpc"
   }
 }
 # creating public subnet 1
@@ -16,7 +16,7 @@ resource aws_subnet "cloudforce_publicA" {
   availability_zone = "us-east-1a"
 
   tags = {
-    "Name" = "cloudforce_publicA"
+    "Name" = "priya_publicA"
   }
 }
 # creating private subnet 1
@@ -26,7 +26,7 @@ resource aws_subnet "cloudforce_privateA"{
   availability_zone = "us-east-1a"
 
   tags = {
-    "Name" = "cloudforce_privateA"
+    "Name" = "priya_privateA"
   }
 }
 # creating public subnet 2
@@ -36,7 +36,7 @@ resource aws_subnet "cloudforce_publicB"{
   availability_zone = "us-east-1b"
 
   tags = {
-    "Name" = "cloudforce_publicB"
+    "Name" = "priya_publicB"
   }
 }
 # creating private subnet 2
@@ -46,7 +46,7 @@ resource aws_subnet "cloudforce_privateB"{
   availability_zone = "us-east-1b"
 
   tags = {
-    "Name" = "cloudforce_privateB"
+    "Name" = "priya_privateB"
   }
 }
 # creating an internet gateway
@@ -54,7 +54,7 @@ resource "aws_internet_gateway" "cloudforce_igw" {
   vpc_id = aws_vpc.cloudforce_vpc.id
 
   tags = {
-    "Name" = "cloudforce_igw"
+    "Name" = "priya_igw"
   }
 }
 # creating a route table 
@@ -62,7 +62,7 @@ resource "aws_route_table" "cloudforce_rtb" {
   vpc_id = aws_vpc.cloudforce_vpc.id
 
   tags = {
-    "Name" = "cloudforce_rtb"
+    "Name" = "priya_rtb"
   }
 }
 # creating a route
