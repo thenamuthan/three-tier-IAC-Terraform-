@@ -1,7 +1,7 @@
 resource "aws_autoscaling_group" "frontendASG" {
   name     = "frontendASG"
   min_size = 2
-  max_size = 6
+  max_size = 2
 
   health_check_type = "EC2"
 
