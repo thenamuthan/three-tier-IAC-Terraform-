@@ -11,4 +11,4 @@ apt-get update
 apt-get install -y docker-ce
 usermod -aG docker ubuntu
 sudo docker pull thenamuthan/simple-devops-image
-sudo docker run -d -p 80:3000 marcrine/bookappfrontend
+sudo docker run -d -p 80:3000 thenamuthan/simple-devops-image
